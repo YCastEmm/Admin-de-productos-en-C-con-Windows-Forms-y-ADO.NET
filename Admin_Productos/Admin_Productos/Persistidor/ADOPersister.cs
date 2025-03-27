@@ -10,7 +10,8 @@ namespace Admin_Productos.Persistidor
 {
     public class ADOPersister : IPersistible
     {
-        public static string ConnectionString = @"Data Source=DESKTOP-HFSE29V; Initial Catalog=ProductoDB;Integrated Security=True;";
+        public static string ConnectionString = @"Data Source=DESKTOP-HFSE29V; Initial Catalog=ProductoDB;Integrated Security=True;TrustServerCertificate=True;";
+
 
         public List<Producto> Find(string partOfDescription)
         {
